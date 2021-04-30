@@ -6,18 +6,41 @@ body{
     color: hsl(0, 36%, 70%);
     background: rgb(255,255,255);
     background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,245,245,1) 35%);
+    margin: 0;
+}
+
+h1{
+    font-size: 70px;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+}
+
+p{
+    line-height: 1.5em;
+    margin-bottom: 3em;
 }
 
 .container{
     display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 .description{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15em;
+    width: 25%;
+    z-index: 10;
 }
 
 .logo{
-
+    position: absolute;
+    width: 10%;
+    top: 5%;
 }
 
 .emailInput{
@@ -25,9 +48,19 @@ body{
 }
 
 .submitBtn{
+    background: rgb(248,191,191);
+    background: linear-gradient(135deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 35%);
+}
 
+.imgContainer{
+    
 }
 
 .mainimg{
     height: 100%;
+    z-index: 50;
+}
+
+@media (max-width: 900px){
+
 }
