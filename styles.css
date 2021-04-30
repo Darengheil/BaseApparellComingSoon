@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body{
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    color: hsl(0, 36%, 70%);
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,245,245,1) 35%);
+}
+
+.container{
+    display: flex;
+}
+
+.description{
+
+}
+
+.logo{
+
+}
+
+.emailInput{
+
+}
+
+.submitBtn{
+
+}
+
+.mainimg{
+    height: 100%;
+}
