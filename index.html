@@ -19,8 +19,9 @@
         <div class="imagecontainer">
           <input type="image" src="images/icon-arrow.svg" class="submitBtn">
         </div>
+        <img src="images/icon-error.svg" class="errorsign">
       </div>
-      <p class="text">Some-text</p>
+      <p class="text">Please provide a valid email</p>
     </div>
     <div class="imgContainer">
       <img src="images/hero-desktop.jpg" class="mainimg">
@@ -28,4 +29,15 @@
   </div>
   <img src="images/bg-pattern-desktop.svg" class="backgroundimg">
 </body>
+<script>
+  let buttonToClick = document.querySelector(".submitBtn");
+  let errorSign = document.querySelector(".errorsign");
+  let text = document.querySelector(".text");
+  let inputForm = document.querySelector(".emailInput");
+  buttonToClick.addEventListener("click", () => {
+    errorSign.style.display = "block";
+    text.style.display = "block";
+    inputForm.style.border = "2px solid hsl(0, 93%, 68%)"
+  });
+</script>
 </html>

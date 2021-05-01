@@ -46,13 +46,14 @@ p{
 .formButton{
     position: relative;
     display: flex;
-    height: 4%;
+    height: 5%;
     align-items: center;
 }
 
 .emailInput{
     padding-left: 2em;
-    color: hsl(0, 36%, 70%);
+    font-family: "Josefin Sans";
+    font-size: 16px;
     width: 90%;
     height: 100%;
     z-index: 1;
@@ -60,6 +61,7 @@ p{
     border-radius: 30px;
     background: rgb(255,255,255);
     background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,245,245,1) 35%);
+    outline: none;
 }
 
 ::placeholder{
@@ -71,7 +73,8 @@ p{
 .imagecontainer{
     display: flex;
     justify-content: center;
-    width: 25%;
+    width: 23%;
+    height: 114%;
     background: rgb(248,191,191);
     background: linear-gradient(135deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 35%);
     border-radius: 30px;
@@ -81,11 +84,33 @@ p{
 }
 
 .text{
+    display: none;
+    bottom: 20%;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
     margin-left: 2em;
+    color: hsl(0, 93%, 68%);
+}
+
+.errorsign{
+    display: none;
+    position: absolute;
+    z-index: 20;
+    right: 30%;
 }
 
 .submitBtn{
     padding: 1em 3em;
+    border-radius: 30px;
+}
+
+.submitBtn:hover{
+    box-shadow: 15px 20px 30px rgb(128, 126, 126);
+    background-color: rgb(255, 172, 172);
+}
+
+.imagecontainer:hover{
 }
 
 .backgroundimg{
